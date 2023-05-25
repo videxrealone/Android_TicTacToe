@@ -2,6 +2,46 @@
 
 The Tic Tac Toe Android application allows two players to play the classic game on a 3x3 grid. The app is built using Java and the Android framework. Let's take a closer look at the key components and functionalities of the application.
 
+-------------------------------------------------------------------------------------------------------------------------------------
+# Layout
+
+The application consists of 4 layouts containing the XML code.
+
+## activity_main.xml
+
+This layout file represents the main activity of the application.
+It uses a `RelativeLayout` as the root view, allowing for flexible positioning of child views.
+The background of the layout is set using the `android:background` attribute, referencing the background drawable resource.
+The main content of the layout is divided into two sections using a `LinearLayout` with a horizontal orientation.
+The first section represents "Player One" and includes a `TextView` to display the player's name and an `ImageView` to show the player's symbol (an "X" image).
+The second section represents "Player Two" and is similar to the first section but with a different background color and an "O" image for the player's symbol.
+The bottom section contains a container `LinearLayout` that holds a grid of 9 `ImageView` elements arranged in a 3x3 format. These image views have a transparent background and can be used to display game-related images or icons.
+
+## activity_add_players.xml
+
+This layout file represents the activity for adding players' names.
+It uses a `LinearLayout` as the root view with a vertical orientation, centering its child views.
+The background of the layout is set using the `android:background` attribute, referencing the background drawable resource.
+The layout includes two sections for entering player names.
+Each section consists of an `ImageView` to display the player's symbol (an "X" or "O" image) and an `EditText` for entering the player's name.
+The layout also includes a button (`AppCompatButton`) labeled "Start Game" to initiate the game after entering player names.
+
+## activity_result.xml
+
+This layout file represents the activity layout for displaying game results.
+It uses a `ConstraintLayout` as the root view, allowing for more complex view positioning and constraints.
+The layout includes a `TextView` to display the game result message and a button (`Button`) labeled "Try again" to restart the game.
+The `TextView` and button are centered vertically and horizontally in the layout using constraints.
+
+## win_dialog_layout.xml
+
+This layout file represents a custom dialog layout that can be used to display a win message.
+It uses a `RelativeLayout` as the root view, allowing for relative positioning of child views.
+The layout includes a `TextView` to display the win message and a button (`AppCompatButton`) labeled "Start Again" to restart the game.
+Both the `TextView` and button are contained within a `LinearLayout` that has a dark blue background.
+
+=> These XML layout files define the structure and appearance of different screens or components within your application. They specify the arrangement and styling of views, such as text views, image views, buttons, and containers, enabling you to create visually appealing and functional user interfaces for your Android application.
+
 ## MainActivity.java
 - This class represents the main activity of the Tic Tac Toe game.
 - It handles the game logic, player turns, and grid state.
@@ -87,7 +127,7 @@ This class represents the activity where players can enter their names before st
 
 - `onCreate(Bundle savedInstanceState)`: This method initializes the player name EditText fields and the start game button. It retrieves the player names entered in the EditText fields, validates them, and starts the game when the start game button is clicked.
 
-```
+```java
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_add_players);
