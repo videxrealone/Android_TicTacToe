@@ -2,6 +2,91 @@
 
 The Tic Tac Toe Android application allows two players to play the classic game on a 3x3 grid. The app is built using Java and the Android framework. Let's take a closer look at the key components and functionalities of the application.
 
+# Introduction
+
+In Tic-Tac-Toe game when it is played between two players, one player being the user and another player as the computer, it has been observed by us that applying optimal strategy it usually ends up in a win or draw condition for the first player. In this paper, we have
+developed a simulation model using min-max algorithm over optimal strategy by giving the players five more moves to change the previous input to minimize the draw scenario and to increase the complexity level of the game. 
+* Keywords: game theory, min-max, optimal strategy, Tic-Tac-Toe.
+
+The player who firstencounters three crosses (‘X’) or three noughts (‘O’) in a particular row, column or diagonal is declared as winner. There are 39 = 19,683 possible states in the game. The purpose of filling the nine spaces can be considered as filling the sequence of nine boxes that is maximum three in a row, column or diagonal. Therefore, there are 9! = 362,880 ways to fill
+the 9th position.
+
+Interestingly, Tic-Tac-Toe game can be reviewed using game theory, in which rational decisions of winning strategy can be considered between the two players. Tic-Tac-Toe uses the strategy that puts the player in the most preferred position irrespective of the strategy of his opponents. This strategy is called an optimal strategy.
+
+# Application Life Cycle
+
+The normal version of tic-tac-toe is a solved game. It always ends up with draw if both players play their best, so for the first player, the minimum requirement for him is a draw. If it is possible, he should also try to win his unqualified opponent by adopting
+the method with the highest winning strategy.
+
+Because of the logic of the game, our app consists of the following life cycle:
+
+![image](https://github.com/videxrealone/Android_TicTacToe/assets/91763346/39800ece-ae36-4812-b9e8-007a50ec15e3)
+
+We can also see that the end of the game is described in this simple graph:
+
+![image](https://github.com/videxrealone/Android_TicTacToe/assets/91763346/4601340b-675f-4f06-a92c-ed852b55d22f)
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+# Application UI & Goals
+
+## Design Objectives:
+
+The design objectives of the Tic Tac Toe application are to create an enjoyable and intuitive gaming
+experience for two players. The user interface should be user-friendly and easy to comprehend,
+providing clear indications of the player&#39;s turn and the game state. The application should allow
+players to enter their names for a personalized experience. Additionally, the design should
+incorporate the game&#39;s logic, checking for win and draw conditions, and enabling players to restart
+the game if needed. The ultimate goal is to provide a entertaining and competitive gaming
+experience for the players.
+
+## Target Audience:
+
+The target audience for the Tic Tac Toe application is primarily individuals who enjoy casual gaming
+and want to engage in a simple yet entertaining game. The game is suitable for players of all ages,
+including children, teenagers, and adults. It caters to both experienced gamers looking for a quick,
+nostalgic experience and casual gamers seeking a fun pastime. The application&#39;s simplicity and
+intuitive design make it accessible to a wide range of users, regardless of their gaming expertise.
+
+## User Interface:
+
+The user interface of the Tic Tac Toe application is designed to be intuitive and visually appealing.
+The grid layout prominently displays the game board, with clear indicators for player turns and
+selectable cells. The use of recognizable X and O symbols ensures familiarity for players, while visual
+cues, such as highlighting the winning combinations, enhance the gameplay experience.
+
+## Gameplay Mechanics:
+
+The gameplay mechanics of the Tic Tac Toe application adhere to the traditional rules of the game.
+Players take turns marking their symbols (X or O) on an empty cell of the 3x3 grid, aiming to create a
+winning combination of three symbols in a row, column, or diagonal. The application ensures fair
+play by validating each move, detecting winning conditions, and determining a draw when the grid is
+full without a winner.
+
+## Design Elements:
+
+The design elements of the Tic Tac Toe application focus on simplicity and visual clarity. A clean and
+uncluttered interface with a balanced color scheme enhances the overall user experience. The
+
+typography is legible, and the use of appropriate iconography provides intuitive navigation and
+feedback. The design elements contribute to a cohesive and enjoyable gameplay environment.
+
+## Platform Considerations:
+The Tic Tac Toe application was developed with platform considerations in mind, considering the
+specific guidelines and conventions of the target platforms, such as iOS and Android. Adhering to
+platform-specific design principles ensures consistency and familiarity for users, making the
+application feel native and optimized for each platform.
+
+## Conclusion:
+In conclusion, the Tic Tac Toe application successfully achieves its objective of providing an engaging
+and accessible digital version of the classic game. The user interface, gameplay mechanics, and
+design elements combine to deliver a user-friendly and visually appealing experience. User feedback
+and iterative design updates further enhance the application&#39;s usability and enjoyment. By
+considering platform-specific guidelines, the application offers a native experience on each platform.
+Overall, the Tic Tac Toe application provides a fun and interactive gameplay experience for a diverse
+range of users.
+
 -------------------------------------------------------------------------------------------------------------------------------------
 # Layout
 
