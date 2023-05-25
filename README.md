@@ -479,6 +479,9 @@ Both the `TextView` and button are contained within a `LinearLayout` that has a 
 * 
 - These XML layout files define the structure and appearance of different screens or components within your application. They specify the arrangement and styling of views, such as text views, image views, buttons, and containers, enabling you to create visually appealing and functional user interfaces for your Android application.
 
+------------------------------------------------------------------------------------------------------------------------------------
+# Java Project Files
+
 ## MainActivity.java
 
 - This class represents the main activity of the Tic Tac Toe game.
