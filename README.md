@@ -9,6 +9,9 @@ The application consists of 4 layouts containing the XML code.
 
 ## activity_main.xml
 
+![image](https://github.com/videxrealone/Android_TicTacToe/assets/91763346/8bfe2ea6-2aa2-4441-a0cc-88fc98e45b3b)
+
+
 This layout file represents the main activity of the application.
 It uses a `RelativeLayout` as the root view, allowing for flexible positioning of child views.
 The background of the layout is set using the `android:background` attribute, referencing the background drawable resource.
@@ -263,6 +266,8 @@ The bottom section contains a container `LinearLayout` that holds a grid of 9 `I
 
 ## activity_add_players.xml
 
+![image](https://github.com/videxrealone/Android_TicTacToe/assets/91763346/2ede3625-8e2b-4a8e-ab2c-323a52be0911)
+
 This layout file represents the activity for adding players' names.
 It uses a `LinearLayout` as the root view with a vertical orientation, centering its child views.
 The background of the layout is set using the `android:background` attribute, referencing the background drawable resource.
@@ -422,6 +427,8 @@ The `TextView` and button are centered vertically and horizontally in the layout
 ```
 
 ## win_dialog_layout.xml
+
+![image](https://github.com/videxrealone/Android_TicTacToe/assets/91763346/559d8d1a-5eff-464d-ada6-75d3cfb89ef5)
 
 This layout file represents a custom dialog layout that can be used to display a win message.
 It uses a `RelativeLayout` as the root view, allowing for relative positioning of child views.
