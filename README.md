@@ -561,8 +561,20 @@ Both the `TextView` and button are contained within a `LinearLayout` that has a 
 ```
 
 * Conclusion:
-* 
-- These XML layout files define the structure and appearance of different screens or components within your application. They specify the arrangement and styling of views, such as text views, image views, buttons, and containers, enabling you to create visually appealing and functional user interfaces for your Android application.
+
+In conclusion, this application demonstrates the use of XML layout files to create visually appealing and functional user interfaces for an Android application. By utilizing different layout containers and view elements, such as RelativeLayout, LinearLayout, TextView, ImageView, and buttons, we were able to design and structure various screens within the application.
+
+The main activity (activity_main.xml) showcases a flexible layout using RelativeLayout, allowing for easy positioning of child views. It presents two player sections with their respective symbols and names, along with a grid of ImageView elements for game-related images or icons.
+
+The activity for adding players' names (activity_add_players.xml) utilizes a LinearLayout with vertical orientation, providing a centered layout for entering player names. It also includes symbols and an EditText for each player, as well as a "Start Game" button to initiate gameplay.
+
+The activity for displaying game results (activity_result.xml) demonstrates the use of a ConstraintLayout, enabling more complex view positioning and constraints. It includes a TextView to show the game result message and a "Try again" button, both centered both vertically and horizontally within the layout.
+
+Additionally, the application includes a custom dialog layout (win_dialog_layout.xml) to display a win message. This layout utilizes a RelativeLayout and a LinearLayout with a dark blue background, containing a TextView and a "Start Again" button.
+
+By leveraging the power of XML layout files, developers can create dynamic and interactive user interfaces that enhance the overall user experience. These layouts provide flexibility in arranging and styling views, ensuring an engaging and visually appealing interface for the application's users.
+
+Overall, the successful implementation of these XML layout files highlights the importance of thoughtful design and user-friendly interfaces in creating compelling Android applications.
 
 ------------------------------------------------------------------------------------------------------------------------------------
 # Java Project Files
@@ -683,3 +695,20 @@ protected void onCreate(Bundle savedInstanceState) {
     });
 }
 ```
+
+# Conclusion
+
+In conclusion, the development of this application has demonstrated the successful integration of Java code and XML layout files to create a fully functional and engaging Android application. By combining the power of programming logic with thoughtful UI design, the app provides an intuitive and immersive user experience.
+
+The Java code forms the backbone of the application, implementing the game logic and user interactions. It encompasses features such as handling player input, tracking game progress, and determining the game's outcome. The well-structured and modular Java code enables smooth gameplay and ensures the app functions as intended.
+
+The XML layout files play a crucial role in defining the visual structure and appearance of the application's screens and components. They provide flexible and responsive layouts, leveraging different layout containers like RelativeLayout, LinearLayout, and ConstraintLayout. These layouts enable the proper placement and styling of various view elements such as TextViews, ImageViews, and buttons. By utilizing XML layouts, the app achieves an appealing and user-friendly interface.
+
+The integration of Java and XML in this application showcases the seamless collaboration between code and design. The Java code implements the logic and functionality, while the XML layout files handle the visual presentation and organization. This harmonious combination ensures a cohesive and engaging user experience, promoting ease of use and interactivity.
+
+Furthermore, the app demonstrates effective utilization of user input, feedback mechanisms, and visual cues to enhance the overall gameplay experience. The UI elements, such as symbols, player names, and game result messages, are intelligently designed and thoughtfully placed, contributing to a polished and professional app.
+
+Overall, the successful development of this application highlights the importance of synergy between Java code and XML layout files in creating robust and visually appealing Android applications. By leveraging the strengths of both aspects, developers can deliver user-centric and feature-rich apps that captivate and delight users.
+
+
+
